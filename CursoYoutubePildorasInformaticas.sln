@@ -43,9 +43,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DelegadosII", "DelegadosII\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DelegadosIII", "DelegadosIII\DelegadosIII.csproj", "{72126FE1-C117-4176-80F6-798837D20FCC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpresionesRegularesI", "ExpresionesRegularesI\ExpresionesRegularesI.csproj", "{6AC4335E-3780-46C5-8DAF-0E97C34D43A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpresionesRegularesI", "ExpresionesRegularesI\ExpresionesRegularesI.csproj", "{6AC4335E-3780-46C5-8DAF-0E97C34D43A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpresionesRegularesII", "ExpresionesRegularesII\ExpresionesRegularesII.csproj", "{CC004170-E701-42DC-AD81-BAA957C961DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpresionesRegularesII", "ExpresionesRegularesII\ExpresionesRegularesII.csproj", "{CC004170-E701-42DC-AD81-BAA957C961DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClasesyObjetos", "ClasesyObjetos\ClasesyObjetos.csproj", "{2F9447FE-F8BB-4406-B56E-8DEBCD47E953}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -141,6 +143,10 @@ Global
 		{CC004170-E701-42DC-AD81-BAA957C961DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC004170-E701-42DC-AD81-BAA957C961DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC004170-E701-42DC-AD81-BAA957C961DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F9447FE-F8BB-4406-B56E-8DEBCD47E953}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F9447FE-F8BB-4406-B56E-8DEBCD47E953}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F9447FE-F8BB-4406-B56E-8DEBCD47E953}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F9447FE-F8BB-4406-B56E-8DEBCD47E953}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

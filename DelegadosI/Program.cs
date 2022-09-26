@@ -4,25 +4,42 @@ namespace DelegadosI
 {
     class Program
     {
+        //DEFINICION DE DELEGADO:
+        //Los delegados son como apuntadores hacia otros métodos
+        //o funciones que llaman a otros metodos. Esto permite 
+        //reutilizar codigo.
+
+        //Los delgados pueden apuntar a las funciones desde
+        //cualquier ambito o alcance.
+
+        //un delegado es como un hibrido entre una clase y
+        //una funcion. Por ejemplo aunque es metodo se puede
+        //hacer una especie de instancia de el para ser utilizado
+        //pero funciona como un metodo cualquiera al momento de
+        //ser llamado.
+
+        //SINTAXIS:
+        //Se escribe la palabra reservada delegate para indicar que es un
+        //método que delega la tarea a otro metodo cuando este es llamado.
+
+        //El delegado debe coincidir exactamente con la misma
+        //estructura del mátodo al que apuntará con la 
+        //diferencia que este lleva la palabra clave delegate.
+
+        //Este delegado podrá apuntar a un método que no devuelva nada y 
+        //que no reciba parámetros.
+        delegate void ObjetoDelegadoSinParametros();
+
+        //Este delegado podrá apuntar a un método que no devuelva nada y
+        //que reciba un parámetro de tipo string.
+        delegate void ObjetoDelegadoConParametros(string msj);
+
         static void Main(string[] args)
         {
-            //Los delegados son como apuntadores hacia otros métodos
-            //o funciones que llaman a otros metodos. Esto permite 
-            //reutilizar codigo.
-
-            //Los delgados pueden apuntar a las funciones desde
-            //cualquier ambito o alcance.
-
-            //un delegado es como un hibrido entre una clase y
-            //una funcion. Por ejemplo aunque es metodo se puede
-            //hacer una especie de instancia de el para ser utilizado
-            //pero funciona como un metodo cualquiera al momento de
-            //ser llamado.
-
-
-            //Para hacer que el delagado apunte a una función compatible
+           
+            //Para hacer que el delegado apunte a una función compatible
             //debemos instanciarlo como si de una clase se tratara. Dentro
-            //de su constructor le pasamos el metodo al que apuntará.
+            //de su constructor le pasamos el método al que apuntará.
             ObjetoDelegadoSinParametros Delegado1 = new ObjetoDelegadoSinParametros(MensajeBienvenida.SaludoBienvenida);
             //Utilizacion del delegado para llamar el método SaludoBienvenida()
             Delegado1();
@@ -39,22 +56,6 @@ namespace DelegadosI
             //es en este punto que le pasamos el parametros que se necesita.
             Delegado2("Adios, hasta pronto!!!");
         }
-
-        //SINTAXIS:
-        //Se escribe la palabra reservada delegate para indicar que es un
-        //método que delega la tarea a otro metodo cuando este es llamado.
-
-        //El delegado debe coincidir exactamente con la misma
-        //estructura del metodo al que apunta con la 
-        //diferencia que este lleva la palabra clave delegate.
-
-        //Este delagado apunta a metodo que no devuelve nada y 
-        //no recibe parametros.
-        delegate void ObjetoDelegadoSinParametros();
-
-        //Este delegado apunta a un metodo que no devuelve nada y recibe
-        //un parametro de tipo string.
-        delegate void ObjetoDelegadoConParametros(string msj);
     }
 
     class MensajeBienvenida

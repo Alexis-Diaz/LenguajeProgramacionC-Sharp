@@ -19,13 +19,14 @@ namespace DelegadosIII
            
             //Uso del delgado con una expresion lanbda
             //Explicacion: En vez de hacer referencia a una funcion
-            //el delegado toma en el constructor una funcion anonima
-            //la sintaxi es la siguiente:
+            //el delegado toma en el constructor una funcion anonima.
+            //La sintaxi de la expresion lambda es la siguiente:
             //
             //(parametros que recibe) (expresion lambda) (cuerpo de la función)
             //        num                    =>               num * num;
             //
             //.
+
             //con un parametro
             operacionesMatematicas op = new operacionesMatematicas(num => num*num);
             Console.WriteLine(op(8));

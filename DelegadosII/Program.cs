@@ -11,12 +11,12 @@ namespace DelegadosII
         //Son delegados normales pero la diferencia
         //es que lo que devuelve es true o false.
 
-        //Son muy utiles al usar listas, pues tiene metodos
-        //que piden de parametros predicate
+        //Son muy útiles al usar listas, pues tiene métodos
+        //que piden de parámetros un predicate
 
         static void Main(string[] args)
         {
-            //Creamos una lista de numeros
+            //Creamos una lista de números
             List<int> listaNumeros = new List<int>();
             //El metodo AddRange permite añadir al final de la lista una serie de elementos.
             listaNumeros.AddRange(new int[] 
@@ -34,9 +34,9 @@ namespace DelegadosII
             });
 
 
-            //Para crear un delegado predicado se instancia el delegado Predicate
+            //Para crear un delegado predicado se instancia el método delegado Predicate
             //que pertence a la libreria de System. Luego por su constructor le 
-            //pasamos la referencia hacia el metodo.
+            //pasamos la referencia hacia el método.
 
             //¿Cómo funciona todo esto?
             //Primero el método FindAll itera sobre todos los elementos
@@ -61,8 +61,10 @@ namespace DelegadosII
 
 
             //EJEMPLO 2
+            //Ver la clase Personas
             Programa.MiMetodo();
         }
+
 
         //Esta funcion devuelve true o false 
         //dependiente si el numero es par o no.
