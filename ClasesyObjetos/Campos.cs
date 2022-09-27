@@ -12,6 +12,8 @@ namespace ClasesyObjetos
     //Estos métodos permiten tener mayor control sobre la escritura
     //y lectura del valor de la propiedad.
 
+    //
+
     //Esta es la clase Campos
     class Campos
     {
