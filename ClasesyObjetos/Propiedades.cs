@@ -10,7 +10,7 @@ namespace ClasesyObjetos
 
     //Una propiedad es un miembro de la clase que proporciona
     //un mecanismo flexible para leer, escribir o calcular el
-    //valor de UN CAMPO PRIVADO.
+    //valor de UN CAMPO PRIVADO de la clase.
     //Estas propiedades usan descriptores de acceso, o que es lo
     //mismo, métodos de acceso; get y set.
     //Estos descriptores permiten tener mayor control sobre la escritura
@@ -29,8 +29,8 @@ namespace ClasesyObjetos
         //de la propiedad. Esto permite al cliente que utiliza la clase
         //crear objetos a su antojo. Como punto importante,
         //se debe tener en cuenta que en estos casos es el COMPILADOR
-        //el que CREA automáticamente los respectivos CAMPOS de
-        //respaldo privado y anónimos a los que solo los descriptores
+        //el que CREA automáticamente los respectivos CAMPOS DE
+        //RESPALDO privado y anónimos a los que solo los descriptores
         //get y set pueden acceder. Ejemplo:
         public string NombreForma { get; set; }
 
@@ -47,10 +47,10 @@ namespace ClasesyObjetos
 
         //Luego escribimos la propiedad con acceso público. Ahora
         //dentro de las llaves escribimos explícitamente a que
-        //campo se accederá con los métodos de lectura y escritura
-        //get y set. En este caso indicamos que con la propiedad
-        //Edad podremos leer (get/obtener) y escribir (set/establecer)
-        //el campo privado _Edad.
+        //campo de respaldo se accederá con los métodos de lectura
+        //y escritura get y set. En este caso indicamos que con la
+        //propiedad Edad podremos leer (get/obtener) y
+        //escribir (set/establecer) el campo privado _Edad.
         public int Cantidad
         {
             get

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClasesyObjetos
 {
-    //Las clases son maquetas que nos permiten crear objetos
+    //Las clases son maquetas o plantillas que nos permiten crear objetos
     //diferentes que comparten las mismas propiedades y métodos.
 
     //Para crear una clase se usa la palabra reservada class

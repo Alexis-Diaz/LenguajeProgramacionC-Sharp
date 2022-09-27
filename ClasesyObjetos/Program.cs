@@ -9,7 +9,8 @@ namespace ClasesyObjetos
         static void Main(string[] args)
         {
             //Uso de los campos
-
+            Llamada campos = new Llamada();
+            campos.MiMetodo();
 
             //Uso de las propiedades
             FormaGeometrica cuadro = new FormaGeometrica();
@@ -21,7 +22,9 @@ namespace ClasesyObjetos
             Console.WriteLine(cuadro.NombreForma);
             Console.WriteLine(cuadro.Cantidad);
             Console.WriteLine(cuadro.Area);
+
             Console.Read();
+
         }
     }
 }
