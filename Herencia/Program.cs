@@ -50,7 +50,7 @@ namespace Herencia
     }
 
     //Ahora creamos las clases hijas que heredaran de la clase padre sus propiedades y
-    //todos sus métodos. Esto significa que desde las clases hijas seremos capaces
+    //todos sus métodos públicos. Esto significa que desde las clases hijas seremos capaces
     //de usar las propiedades y métodos del padre. Además cada clase podrá tener sus
     //propias propiedades y métodos personalizados. Recordar que la herencia se representa
     //con los dos puntos (:).
@@ -124,7 +124,8 @@ namespace Herencia
             Gorila gorila = new Gorila("Peca");
 
             //Todas pueden acceder por herencia al método de 
-            //la clase padre.
+            //la clase padre. Nota: los campos, propiedades y métodos
+            //privados no podrán ser accedidos desde las clases hijas.
             persona.Respirar();
             caballo.Respirar();
             gorila.Respirar();

@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Comentarios", "Comentarios\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Array", "Array\Array.csproj", "{CAEDBB59-FFA3-40A5-9B31-99076D02E8ED}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Herencia", "Herencia\Herencia.csproj", "{E1599384-34FD-4F39-BB44-8E1EEAB1DA0D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HerenciaI", "Herencia\HerenciaI.csproj", "{E1599384-34FD-4F39-BB44-8E1EEAB1DA0D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Polimorfismo", "Polimorfismo\Polimorfismo.csproj", "{909F4A44-9B3C-4C5E-B524-F717C7748A01}"
 EndProject
@@ -52,6 +52,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Metodos", "Metodos\Metodos.csproj", "{FB7166D1-F988-4077-B275-28F4DCCD0250}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-Introduccion", "01-Introduccion\01-Introduccion.csproj", "{8A28AEFA-F15A-4966-AF38-E288A0C8E708}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HerenciaII", "HerenciaII\HerenciaII.csproj", "{17A8481E-CCB9-44D0-8F33-D9E08FECB935}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -159,6 +161,10 @@ Global
 		{8A28AEFA-F15A-4966-AF38-E288A0C8E708}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A28AEFA-F15A-4966-AF38-E288A0C8E708}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A28AEFA-F15A-4966-AF38-E288A0C8E708}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17A8481E-CCB9-44D0-8F33-D9E08FECB935}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17A8481E-CCB9-44D0-8F33-D9E08FECB935}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17A8481E-CCB9-44D0-8F33-D9E08FECB935}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17A8481E-CCB9-44D0-8F33-D9E08FECB935}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
