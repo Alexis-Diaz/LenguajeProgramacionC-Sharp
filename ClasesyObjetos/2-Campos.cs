@@ -17,7 +17,7 @@ namespace ClasesyObjetos
     //Los campos generalmente deben ser privados y el cliente
     //debe acceder a este ya sea por medio de métodos, propiedades
     //o indizadores. Esto sirve para protegerse de las entradas
-    //de datos no validados.
+    //de datos no validados (principio de encapsulamiento).
     //
     //Cuando un campo es accedido por medio de una propiedad,
     //entonces se le conoce como memoria auxiliar o campo de respaldo.
