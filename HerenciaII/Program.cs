@@ -78,7 +78,7 @@ namespace HerenciaII
             Console.WriteLine(Environment.NewLine);
 
             //Tambien gracias al principio de sustitución
-            //(polimorfismo) podemos crear listas de ovejas
+            //(POLIMORFISMO) podemos crear listas de ovejas
             //o vacas usando la clase padre. El incoveniente
             //es que no podremos usar los métodos propios
             //de los hijos como OrdeñarVaca de Vaca o EsquilarOveja

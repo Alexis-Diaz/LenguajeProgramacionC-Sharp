@@ -131,7 +131,7 @@ namespace Herencia
             gorila.Respirar();
 
 
-            //PRINCIPIO DE SUSTITUCIÓN
+            //PRINCIPIO DE SUSTITUCIÓN (POLIMORFISMO)
             //Este principio establece que todos los
             //objetos seran igual a su clase padre y por
             //tanto la clase padre puede contener cualquier
