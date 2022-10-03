@@ -51,9 +51,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClasesyObjetos", "ClasesyOb
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Metodos", "Metodos\Metodos.csproj", "{FB7166D1-F988-4077-B275-28F4DCCD0250}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-Introduccion", "01-Introduccion\01-Introduccion.csproj", "{8A28AEFA-F15A-4966-AF38-E288A0C8E708}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01-Introduccion", "01-Introduccion\01-Introduccion.csproj", "{8A28AEFA-F15A-4966-AF38-E288A0C8E708}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HerenciaII", "HerenciaII\HerenciaII.csproj", "{17A8481E-CCB9-44D0-8F33-D9E08FECB935}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HerenciaII", "HerenciaII\HerenciaII.csproj", "{17A8481E-CCB9-44D0-8F33-D9E08FECB935}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
