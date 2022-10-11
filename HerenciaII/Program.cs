@@ -83,7 +83,7 @@ namespace HerenciaII
             //es que no podremos usar los métodos propios
             //de los hijos como OrdeñarVaca de Vaca o EsquilarOveja
             //de Oveja, en el caso de las sobre escrituras de métodos
-            //simpre siguen siendo vigentes.
+            //siempre siguen siendo vigentes.
             List<Animal> animales = new List<Animal>()
             {
                 new Vaca("Otis"),
