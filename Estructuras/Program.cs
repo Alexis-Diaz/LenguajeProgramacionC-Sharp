@@ -14,7 +14,7 @@ namespace Estructuras
 
         //Cuando un valor es referenciado se da el fenómeno que todas
         //las variables que usan ese valor serán cambiadas cuando solo
-        //una de ellas cambie. Mientras que las referencias por valor
+        //una de ellas cambie. Mientras que las variables por valor
         //solo cambian el valor de la variable modificada pues cada
         //variable en realidad hace una copia del valor que posee.
 

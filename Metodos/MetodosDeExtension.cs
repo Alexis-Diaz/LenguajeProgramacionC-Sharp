@@ -39,10 +39,10 @@ namespace Metodos
     {
         //Dentro creamos un metodo.
         //this int valor: indica al tipo que se le agregará el método. En este caso al tipo int.
-        //En este parametro podemos indicar practicamente cualquier tipo.
+        //En este parámetro podemos indicar prácticamente cualquier tipo.
         //
-        //int exponente: parametro que le pasaremos, pueden ser más.
-        public static  double ElevadoALa(this int valor, int exponente)
+        //int exponente: parámetro que le pasaremos, pueden ser más.
+        public static double ElevadoALa(this int valor, int exponente)
         {
             return Math.Pow(valor, exponente);
         }
@@ -52,7 +52,7 @@ namespace Metodos
     {
         public void UsarExtension()
         {
-            //Para usar el nuevo metodo de extesion
+            //Para usar el nuevo método de extesión
             //solo se accede por medio de punto.
             Console.WriteLine(3.ElevadoALa(9));
             Console.WriteLine(8.ElevadoALa(2));
