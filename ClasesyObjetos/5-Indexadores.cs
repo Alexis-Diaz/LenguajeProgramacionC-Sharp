@@ -27,7 +27,8 @@ namespace ClasesyObjetos
             set { _listaNumerosI[i] = value; }
         }
 
-        //Este marca error
+        //Este código marca error, porque se usa el mismo
+        //tipo y cantidad de parámetro.
         //public int this[int i]
         //{
         //    get { return _listaNumerosII[i]; }

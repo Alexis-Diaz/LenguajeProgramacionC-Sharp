@@ -11,11 +11,10 @@ namespace ClasesyObjetos
         //INDEXADORES
         //Los indexadores permiten trabajar con vectores o listas
         //directamente desde la instancia de clase, pero un valor
-        //a la vez, sin permitir obtener o escribir el valor a to-
-        //da la lista completa.
+        //a la vez, sin permitir obtener o escribir el valor de la
+        //lista completa.
         //
-        //
-        //Por ejemplo, normalmente haríamos los siguiente:
+        //Por ejemplo, normalmente haríamos lo siguiente:
         //Declaramos el siguiente campo privado que al-
         //macena una lista de números.
         private List<int> _listaNumerica;
@@ -25,15 +24,14 @@ namespace ClasesyObjetos
         //Nota: Esta es otra forma más reciente de escribir el get y set
         public List<int> ListaNumerica { get => _listaNumerica; set => _listaNumerica = value; }
 
-        //O puede que preferiríamos utilizar la forma autoimplementada
+        //O puede que preferiríamos utilizar la forma autoimplementada, sin necesidad de 
+        //utilizar de forma explícita un campo privado.
         public List<int>ListaNumerica_ { get; set; }
-
-
-        //Con lo anterior si instanciamos la clase Indexadores podremos leer
-        //y escribir el valor del campo de respaldo privado _listaNumerica
-        //sin nunguna restricción, de la siguiente manera:
     }
 
+    //Con lo anterior si instanciamos la clase IndexadoresI podremos leer
+    //y escribir el valor del campo de respaldo privado _listaNumerica
+    //sin nunguna restricción, de la siguiente manera:
     class LlamadaIndexadorI
     {
         public void MiMetodo()
