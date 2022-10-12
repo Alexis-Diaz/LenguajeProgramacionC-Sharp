@@ -111,18 +111,19 @@ namespace ModificadoresDeAcceso
     }
     
     //PROTECTED
-    //Una clase derivada intenta acceder al miembro protegido de la ClaseC.
+    //Una clase derivada intenta acceder al miembro protegido de la ClaseC
+    //de este mismo ensamblado.
     class ClaseC
     {
         protected string CampoX;
     }
 
-    class ClaseDerivada : ClaseC
+    class ClaseDerivadaA : ClaseC
     {
         void Metodo()
         {
             //Error CS1540: No se puede acceder al miembro protegido directamente de la 
-            //instancia de la ClaseC.
+            //instancia de la clase base llamada ClaseC.
             ClaseC claseC = new ClaseC();
             //claseC.CampoX = "Algo de contenido";
 
@@ -130,7 +131,30 @@ namespace ModificadoresDeAcceso
             //protegido de la clase base.
 
             //Mediante la instancias de la clase derivada
-            ClaseDerivada claseDerivada = new ClaseDerivada();
+            ClaseDerivadaA claseDerivada = new ClaseDerivadaA();
+            claseDerivada.CampoX = "Algo de contenido";
+
+            //o mediante la herencia con el uso de this.
+            this.CampoX = "Algo de contenido";
+        }
+    }
+
+    //Una clase derivada intenta acceder al miembro protegido de la ClaseC
+    //de otro ensamblado.
+    class ClaseDerivadaB : ModificadoresDeAccesoI.ClaseC
+    {
+        void Metodo()
+        {
+            //Error CS1540: No se puede acceder al miembro protegido directamente de la 
+            //instancia de la clase base llamada ClaseC.
+            ModificadoresDeAccesoI.ClaseC claseC = new ModificadoresDeAccesoI.ClaseC();
+            //claseC.CampoX = "Algo de contenido";
+
+            //Estas son las dos formas de poder acceder al campo
+            //protegido de la clase base.
+
+            //Mediante la instancias de la clase derivada
+            ClaseDerivadaB claseDerivada = new ClaseDerivadaB();
             claseDerivada.CampoX = "Algo de contenido";
 
             //o mediante la herencia con el uso de this.
