@@ -162,6 +162,27 @@ namespace ModificadoresDeAcceso
         }
     }
 
+    //PRIVATE
+    //Los miembros privados son únicamente accesible desde 
+    //la misma clase. Si una clase intentar acceder a este
+    //miembro se mostrará un error en tiempo de compilación.
+
+    class ClaseD
+    {
+        private string CampoX;
+    }
+
+    class PruebaAcceso3
+    {
+        void Metodo()
+        {
+            //Error CS0122: El campo 'claseD.CampoX' no es accesible debido
+            //a su nivel de acceso.
+            ClaseD claseD = new ClaseD();
+            //claseD.CampoX = "Algo de contenido";
+        }
+    }
+
     class Program
     {
         static void Main()
