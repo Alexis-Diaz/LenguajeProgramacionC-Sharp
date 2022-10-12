@@ -16,6 +16,8 @@ namespace ModificadoresDeAccesoI
         public string CampoX;
     }
 
+    //Los miembros internal solo son accedidos desde este mismo
+    //ensamblado.
     public class ClaseB1
     {
         internal string CampoX;
