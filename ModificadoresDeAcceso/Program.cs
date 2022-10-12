@@ -180,6 +180,11 @@ namespace ModificadoresDeAcceso
             //a su nivel de acceso.
             ClaseD claseD = new ClaseD();
             //claseD.CampoX = "Algo de contenido";
+
+            //Error CS0122: El campo 'ModificadoresDeAccesoI.claseD.CampoX' no es accesible debido
+            //a su nivel de acceso.
+            ModificadoresDeAccesoI.ClaseD _claseD = new ModificadoresDeAccesoI.ClaseD();
+            //_claseD.CampoX = "Algo de contenido";
         }
     }
 

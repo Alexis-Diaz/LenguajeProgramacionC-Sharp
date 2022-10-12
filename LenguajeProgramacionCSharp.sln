@@ -57,8 +57,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HerenciaII", "HerenciaII\He
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModificadoresDeAccesoI", "ModificadoresDeAccesoI\ModificadoresDeAccesoI.csproj", "{6068140E-9026-4E56-98A7-23BE06832983}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModificadoresDeAccesoII", "ModificadoresDeAccesoII\ModificadoresDeAccesoII.csproj", "{626D2857-08FC-4A51-9274-B9C6C64D68C9}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -173,10 +171,6 @@ Global
 		{6068140E-9026-4E56-98A7-23BE06832983}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6068140E-9026-4E56-98A7-23BE06832983}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6068140E-9026-4E56-98A7-23BE06832983}.Release|Any CPU.Build.0 = Release|Any CPU
-		{626D2857-08FC-4A51-9274-B9C6C64D68C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{626D2857-08FC-4A51-9274-B9C6C64D68C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{626D2857-08FC-4A51-9274-B9C6C64D68C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{626D2857-08FC-4A51-9274-B9C6C64D68C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
