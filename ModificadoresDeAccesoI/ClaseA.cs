@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 namespace ModificadoresDeAccesoI
 {
     //PUBLIC 
-    
+    //Las clases y miembros de clases públicos
+    //son accedidos desde cualquier lugar
     public class ClaseA
     {
         public string CampoX;

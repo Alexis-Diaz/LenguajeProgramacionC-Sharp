@@ -44,6 +44,9 @@
     <Compile Include="ClaseA.cs" />
     <Compile Include="ClaseB.cs" />
     <Compile Include="ClaseC.cs" />
+    <Compile Include="ClaseD.cs" />
+    <Compile Include="ClaseE.cs" />
+    <Compile Include="ClaseF.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

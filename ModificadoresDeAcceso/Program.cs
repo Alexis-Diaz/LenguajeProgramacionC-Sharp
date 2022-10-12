@@ -41,9 +41,9 @@ namespace ModificadoresDeAcceso
     // private : el acceso está limitado a la clase contenedora o
     //           o a los tipos.
     //
-    // protected internal: El acceso está limitado al ensamblado
-    //                     actual o a los tipos derivados de la
-    //                     clase contenedora.
+    // protected internal: Actúa como un switcheo. En el mismo ensamblado
+    //                     el miembro actúa como un miembro internal, pero
+    //                     fuera del ensamblado se comporta como protected.
     // 
     // private protected: el acceso está limitado a la clase con-
     //                    tenedora o a los tipos derivados de la
@@ -164,7 +164,7 @@ namespace ModificadoresDeAcceso
 
     //PRIVATE
     //Los miembros privados son únicamente accesible desde 
-    //la misma clase. Si una clase intentar acceder a este
+    //la misma clase. Si otra clase intenta acceder a este
     //miembro se mostrará un error en tiempo de compilación.
 
     class ClaseD
@@ -183,11 +183,107 @@ namespace ModificadoresDeAcceso
         }
     }
 
+    //PROTECTED INTERNAL
+    //Cuando la clase base (ClaseE) tiene un miembro protected internal, significa
+    //que éste miembro podrá ser accedido desde cualquier otra clase (ClaseDerivadaC)
+    //mediante una instancia de la clase base (ClaseE) con la condición que se encuentre
+    //en el mismo ensamblado, es decir, que este miembro dentro de su MISMO ENSAMBLADO
+    //se comporta como un miembro de accesibilidad internal; pero cuando se desee usar
+    //desde un ENSAMBLADO DISTINTO se comporta como protected.
+    class ClaseE
+    {
+        protected internal string CampoX;
+    }
+
+    class ClaseDerivadaC : ModificadoresDeAccesoI.ClaseE
+    {
+        void Metodo()
+        {
+            //Sin necesidad de herencia se puede instanciar la ClaseE que
+            //se encuentra en este mismo ensambaldo para acceder a su miembro
+            //protected internal, ya que en este contexto el miembro solo 
+            //se comporta como internal.
+            ClaseE claseE = new ClaseE();
+            claseE.CampoX = "Algo de contenido";
+
+            //Si tratamos de hacer lo mismo para la ClaseE que se encuentra
+            //en un ensamblado diferente, entonces mostrará un error.
+            //Error CS1540: no se puede acceder al campo.
+            ModificadoresDeAccesoI.ClaseE _claseE = new ModificadoresDeAccesoI.ClaseE();
+            //_claseE.CampoX = "Algo de contenido";
+
+            //Para poder acceder al miembro protected internal de otro
+            //ensamblado, debemos hacerlo por medio de herencia, pues
+            //en este caso el miembro actúa como protected.
+            ClaseDerivadaC claseDerivadaC = new ClaseDerivadaC();
+            claseDerivadaC.CampoX = "Algo de contenido";
+
+            //o usando el contexto
+            this.CampoX = "Algo de contenido";
+
+        }
+    }
+
+
+    //PRIVATE PROTECTED
+    //Estos miembros actúan como miembros protected dentro
+    //del mismo ensamblado; pero como private en otro ensa-
+    //blado. Lo que indica que desde fuera de su ensamblado
+    //no se pueden acceder.
+    class ClaseF
+    {
+        private protected string CampoX;
+    }
+
+    //Una clase accede a un campo protected private del mismo
+    //ensamblado.
+    class ClaseDerivadaD : ClaseF
+    {
+        void Metodo()
+        {
+            //No se puede acceder desde la instancia de la
+            //clase base, porque el campo aquí es protected.
+            ClaseF claseF = new ClaseF();
+            //claseF.CampoX = "Älgo de contenido";
+
+            //Para acceder lo hacemos mediante la clase derivada
+            ClaseDerivadaD claseDerivadaD = new ClaseDerivadaD();
+            claseDerivadaD.CampoX = "Algo de contenido";
+
+            //o usando el contexto de la clase actual
+            this.CampoX = "Algo de contenido";
+        }
+    }
+
+    //Una clase no puede acceder a un campo private protected
+    //de otro ensamblado.
+    class ClaseDerivadaE : ModificadoresDeAccesoI.ClaseF
+    {
+        void Metodo()
+        {
+            //No se puede acceder desde la instancia de la
+            //clase base, porque el campo de otro ensamblado
+            //es private.
+            ModificadoresDeAccesoI.ClaseF claseF = new ModificadoresDeAccesoI.ClaseF();
+            //claseF.CampoX = "Älgo de contenido";
+
+            //Ahora bien, si intentamos acceder a un miembro
+            //private protected que se encuentra en otro ensam-
+            //blado obtendremos un error, pues deja de ser
+            //protected y se comporta como private.
+            ClaseDerivadaE claseDerivadaE = new ClaseDerivadaE();
+            //claseDerivadaE.CampoX = "Algo de contenido";
+
+            //o usando el contexto de la clase actual
+            //this.CampoX = "Algo de contenido";
+        }
+    }
+
     class Program
     {
         static void Main()
         {
-
+            Console.WriteLine("Modificadores de acceso");
         }
     }
 }
