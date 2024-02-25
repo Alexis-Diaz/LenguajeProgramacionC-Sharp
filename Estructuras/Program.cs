@@ -21,7 +21,6 @@ namespace Estructuras
         //¿Cuando usar structuras?
         //Es bueno usarlas cuando el rendimiento es importante, ya que
         //la memoria stack es de acceso rápido con grandes cantidades de datos.
-       
 
         static void Main(string[] args)
         {
@@ -31,7 +30,7 @@ namespace Estructuras
             //valor cambiarán al modificarse una de ellas.
 
             //Se declaran 3 variables que apuntan al mismo objeto em
-            Empleado em = new Empleado(500,129);
+            Empleado em = new(500, 129);
             var variable1 = em;
             var variable2 = em;
             var variable3 = em;
@@ -49,8 +48,6 @@ namespace Estructuras
             Console.WriteLine("\n----------------------------\n");
 
 
-
-
             //ESTRUCT
             //Esta instancia de struct se almacena en la memoria stack
             //lo que significa que todas las variables hacen una copia
@@ -59,7 +56,7 @@ namespace Estructuras
             //continuaran sin cambios.
 
             //Se declaran 3 variables que hacen copia del mismo objeto emp
-            Empleados emp = new Empleados(500, 129);
+            Empleados emp = new(500, 129);
             var variable4 = emp;
             var variable5 = emp;
             var variable6 = emp;
@@ -85,10 +82,10 @@ namespace Estructuras
         public Empleado(double salarioBase, double comision)
         {
             this.salarioBase = salarioBase;
-            this.comision=comision;
+            this.comision = comision;
         }
 
-        //Sobre escribimos el método virtual que se hereda de la super
+        //Sobrescribimos el método virtual que se hereda de la super
         //clase Object, el cual sirve para imprimir un mensaje al 
         //imprimir directamente el objeto instanciado.
         public override string ToString()
@@ -106,9 +103,7 @@ namespace Estructuras
             Console.WriteLine("impresion desde el método CambiarSalario");
             Console.WriteLine(em);
             Console.WriteLine("fin de impresion desde el método CambiarSalario\n");
-
         }
-
     }
 
     struct Empleados
@@ -126,7 +121,7 @@ namespace Estructuras
             this.comision = comision;
         }
 
-        //Sobre escribimos el metodo virtual que se hereda de la super
+        //Sobrescribimos el metodo virtual que se hereda de la super
         //clase Object, el cual sirve para imprimir un mensaje al 
         //imprimir directamente el objeto instanciado.
         public override string ToString()
@@ -146,6 +141,5 @@ namespace Estructuras
             Console.WriteLine("fin de impresion desde el metodo CambiarSalario\n");
 
         }
-
     }
 }
